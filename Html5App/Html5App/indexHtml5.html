@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Html5 form etiketleri</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <form name="html" method="get">
+        <input type="date" name="date" pattern="\d{2}-\d{2}-\d{4}" title="DD-MM-YYYY" />
+        <!--pattern: tarihin nasıl yazılacağını/görüneceğini belirtiyor. -->
+        <input type="color" name="color" value=""/>
+        <input type="email" name="email" multiple />
+        <!-- multiple birden fazla e-mail yazmayı sağlar.-->
+        <input type="search" name="source"/><br/>
+        <input type="url" name="url"/>
+        <!-- Url girme işi http://...-->
+        <input  type="number" name="number" min="1" max="10" value="5"/>
+        <!--Yukardaki belli bir aralıkta verilen rakamları seçme ve varsayılan değeri-->
+        <label>Sürgülü Aralık değeri</label><input type="range" name="range" min="0" max="100" step="10" value="50"/>
+        
+        <input type="submit" name="send" value="Gönder!" />
+
+    </form>
+</body>
+</html>
